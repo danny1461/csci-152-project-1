@@ -91,7 +91,7 @@ parser.add_argument(
 parser.add_argument(
 		'--speed',
 		nargs='?',
-		type=int,
+		type=float,
 		default=1,
 		help='How quickly to pass time by: 1 is realtime, 2 is twice as fast, etc')
 parser.add_argument(
