@@ -4,7 +4,7 @@ from random import uniform
 from job import Job
 from csv import reader
 
-exports = ['Random', 'File']
+exports = ['Random', 'CSVFile']
 
 # base class for producers
 @classEvents(['eventNewJob'])
@@ -47,7 +47,7 @@ class Random(BaseProducer):
 			self.eventNewJob.fire(job)
 			self._queue.append((0, job))
 
-class File(BaseProducer):
+class CSVFile(BaseProducer):
 	def produceJobs(self):
 		with open(self._args.jobsFile, 'r') as handle:
 			# parse the file as CSV
