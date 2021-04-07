@@ -117,7 +117,6 @@ consumer = args.consumer(args, scheduler)
 display = args.display(args, producer)
 
 lastTime = faketime.time()
-firstTime = faketime.time()
 producer.produceJobs()
 
 while scheduler.jobCount() > 0 or producer.count() > 0:
