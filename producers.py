@@ -45,7 +45,7 @@ class Random(BaseProducer):
 			delay += 1
 			job = Job(executeTime, delay)
 			self.eventNewJob.fire(job)
-			self._queue.append((0, job))
+			self._queue.append((delay, job))
 
 class CSVFile(BaseProducer):
 	def produceJobs(self):
