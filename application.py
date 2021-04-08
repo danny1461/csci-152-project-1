@@ -106,7 +106,7 @@ args = parser.parse_args(commandLineArgs)
 # Couple conditional requirements
 if (args.speed <= 0):
 	exit('Speed should be greater than 0')
-if (args.producer == producers.File and not path.exists(args.jobsFile)):
+if (args.producer == producers.CSVFile and not path.exists(args.jobsFile)):
 	exit('Jobs file cannot be found')
 
 # Put together chosen classes and bootstrap
