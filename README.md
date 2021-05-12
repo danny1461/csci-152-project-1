@@ -1,6 +1,6 @@
 # csci-152-project-1
 
-python application.py FCFS Random MultiCore Console --speed 10 --cores 4
+python application.py **FCFS** **Random** **MultiCore** **Console** --speed 10 --cores 4
 
 The four bolded arguments are required and provide the class name for each of the following processes. They are provided IN ORDER:
   - Scheduler
